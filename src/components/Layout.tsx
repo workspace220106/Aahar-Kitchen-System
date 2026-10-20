@@ -2,7 +2,6 @@ import { ReactNode, useEffect, useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from './Icons';
-import { TEAM } from '../lib/data';
 
 const LINKS = [
   { to: '/scan', label: 'Scan' },
@@ -12,7 +11,6 @@ const LINKS = [
   { to: '/family', label: 'Family' },
   { to: '/cook', label: 'Cook' },
   { to: '/health', label: 'Health' },
-  { to: '/about', label: 'About' },
 ];
 
 export function Layout({ children }: { children: ReactNode }) {
@@ -115,19 +113,17 @@ export function Layout({ children }: { children: ReactNode }) {
       <main className="flex-1">{children}</main>
 
       <footer className="border-t border-ink/10 mt-20">
-        <div className="mx-auto max-w-6xl px-5 py-10 grid gap-8 md:grid-cols-[1.4fr_1fr_1fr] text-[0.9rem]">
+        <div className="mx-auto max-w-6xl px-5 py-10 grid gap-8 md:grid-cols-[1.4fr_1.1fr_1fr] text-[0.9rem]">
           <div>
             <p className="font-display text-xl font-semibold tracking-[0.06em]">AHAAR</p>
             <p className="mt-2 text-muted max-w-sm">Open the fridge. Know what's for dinner.</p>
             <p className="mt-4 text-[0.8rem] text-muted">Guidance, not medical advice.</p>
           </div>
           <div>
-            <p className="kicker mb-2">{TEAM.group}</p>
-            <ul className="text-muted">
-              {TEAM.members.map((m) => <li key={m}>{m}</li>)}
-            </ul>
-            <p className="mt-3 text-muted">Guide: {TEAM.guide}</p>
-            <p className="text-muted">{TEAM.year}</p>
+            <p className="kicker mb-2">Household Nutrition</p>
+            <p className="text-muted leading-relaxed">
+              Every family member has distinct metabolic and vitality needs. AHAAR dynamically calibrates Indian home thalis for blood pressure, blood glucose, and daily energy.
+            </p>
           </div>
           <div>
             <p className="kicker mb-2">Features</p>

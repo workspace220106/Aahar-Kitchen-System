@@ -9,7 +9,6 @@ import Recipes from './pages/Recipes';
 import Family from './pages/Family';
 import Cook from './pages/Cook';
 import Health from './pages/Health';
-import About from './pages/About';
 
 export default function App() {
   const location = useLocation();
@@ -30,7 +29,6 @@ export default function App() {
         <Route path="/family" element={<Family />} />
         <Route path="/cook" element={<Cook />} />
         <Route path="/health" element={<Health />} />
-        <Route path="/about" element={<About />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </Layout>

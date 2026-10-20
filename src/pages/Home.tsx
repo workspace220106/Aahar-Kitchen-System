@@ -86,7 +86,7 @@ export default function Home() {
         <ol className="mt-10 grid md:grid-cols-2 gap-4">
           {FEATURES.map((f, i) => {
             const Icon = ICONS[i];
-            const soon = 'soon' in f && f.soon;
+            const soon = 'soon' in f && Boolean((f as { soon?: boolean }).soon);
             return (
               <Reveal key={f.to} i={i % 2} className={i === 0 ? 'md:col-span-2' : ''}>
                 <Link
@@ -135,7 +135,7 @@ export default function Home() {
           </div>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link to="/scan" className="btn-primary"><Camera /> Start with a scan</Link>
-            <Link to="/about" className="btn-ghost">How it's built</Link>
+            <Link to="/health" className="btn-ghost">Family health growth</Link>
           </div>
         </Reveal>
       </section>

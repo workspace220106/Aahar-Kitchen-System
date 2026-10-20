@@ -190,7 +190,7 @@ export default function Cook() {
         </section>
       </div>
 
-      <NextStep to="/health" label="Metabolic insights" hint="What's planned for glucose-aware portions." />
+      <NextStep to="/health" label="Family health growth" hint="See the lifestyle and biomarker transformation across the family." />
     </Page>
   );
 }
