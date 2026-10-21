@@ -27,7 +27,7 @@ export const FEATURES = [
   { to: '/recipes', n: '04', title: 'Meal recommendations', line: 'Dishes ranked by what you already have, your diet and glycaemic load. Each one explains itself.' },
   { to: '/family', n: '05', title: 'Family portions', line: 'One pot, divided for everyone at the table by age and activity.' },
   { to: '/cook', n: '06', title: 'Cook-along', line: 'One step on screen at a time, with a timer that runs while your hands are busy.' },
-  { to: '/health', n: '07', title: 'Family health growth', line: 'Real biomarker progress and lifestyle transformation across every family member.' },
+  { to: '/health', n: '07', title: 'Metabolic insights', line: 'Planned: glucose-aware portions with CGM integration.', soon: true },
 ] as const;
 
 export type Recipe = {
