@@ -135,7 +135,7 @@ export default function Home() {
           </div>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link to="/scan" className="btn-primary"><Camera /> Start with a scan</Link>
-            <Link to="/health" className="btn-ghost">Metabolic insights</Link>
+            <Link to="/health" className="btn-ghost">Family health growth</Link>
           </div>
         </Reveal>
       </section>

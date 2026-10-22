@@ -25,9 +25,9 @@ export const FEATURES = [
   { to: '/detect', n: '02', title: 'Ingredient detection', line: 'Every item gets a box, a name and a confidence score. Wrong guess? Remove it.' },
   { to: '/pantry', n: '03', title: 'Pantry & quantities', line: 'Rough amounts you can nudge — 4 tomatoes, 250 g paneer — linked to what they can become.' },
   { to: '/recipes', n: '04', title: 'Meal recommendations', line: 'Dishes ranked by what you already have, your diet and glycaemic load. Each one explains itself.' },
-  { to: '/family', n: '05', title: 'Family portions', line: 'One pot, divided for everyone at the table by age and activity.' },
+  { to: '/family', n: '05', title: 'Family portions & health', line: 'Portions tailored by disease, BP and heart rate, with standard 100g=1bowl measures.' },
   { to: '/cook', n: '06', title: 'Cook-along', line: 'One step on screen at a time, with a timer that runs while your hands are busy.' },
-  { to: '/health', n: '07', title: 'Metabolic insights', line: 'Planned: glucose-aware portions with CGM integration.', soon: true },
+  { to: '/health', n: '07', title: 'Family health growth', line: 'Track how family health, blood pressure, and heart rate increased during AHAAR usage.' },
 ] as const;
 
 export type Recipe = {
